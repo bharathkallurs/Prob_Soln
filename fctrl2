@@ -1,0 +1,18 @@
+#!/usr/bin/python -tt
+# http://www.spoj.pl/problems/FCTRL2/
+import sys
+
+def main() :
+  t = int(input())
+	res = 1
+	while t :
+		n = int(input())
+		while n :
+			res *= n
+			n -= 1
+		print (int(res))
+		res = 1
+		t -= 1
+			
+if __name__ == '__main__' :
+	main()
